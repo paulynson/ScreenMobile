@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+*{
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box !important;
+  font-family: 'poppins', cursive;
+  max-width: 500px !important;
+  clear: both;
+}
+
+html{
+background-color: #f2f2ff;
+}
+
+.navbar-toggler:focus{
+  outline: 0;
+}
+
+.navbar-toggler{
+  border: 0 !important;
+}
+
+.clean-scroll{
+  white-space: nowrap !important;
+  overflow: auto !important;
+}
+
+.clean-scroll .images{
+  display: inline-block !important;
+    box-sizing: border-box !important;
+}
+
+/*
+.card-deck, .card, .card-body{
+  box-sizing: border-box !important;
+} */
