@@ -14,12 +14,24 @@ html{
 background-color: #f2f2ff;
 }
 
+.navbar-toggler:focus {
+  outline: 0;
+  box-shadow: 0;
+}
+
+.navbar-dark .navbar-toggler {
+  color: transparent !important;
+  border-color: transparent !important;
+}
+
 .navbar-toggler:focus{
   outline: 0;
+  box-shadow: 0;
 }
 
 .navbar-toggler{
   border: 0 !important;
+  padding: 0;
 }
 
 .clean-scroll{
@@ -36,3 +48,8 @@ background-color: #f2f2ff;
 .card-deck, .card, .card-body{
   box-sizing: border-box !important;
 } */
+
+
+.nav-link:hover{
+  color: #ffa000!important;
+}
