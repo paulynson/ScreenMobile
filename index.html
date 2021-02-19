@@ -1,371 +1,454 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Mobile App</title>
-    <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link href="assets/css/hamburgers.css" rel="stylesheet">
-  </head>
-  <body>
 
-    <!-- Navbar Section -->
-    <nav class="navbar navbar-sm navbar-dark bg-dark fixed-top mb-5 justify-centent-between">
-  <div class="container-fluid">
-    <a class="navbar-brand mx-2 text-warning" href="#">Screen Mobile</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<head>
+  <meta charset="utf-8">
+  <title>Mobile App</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="assets/css/hamburgers.css" rel="stylesheet">
 
 
-      <!-- Menu Toggle -->
-      <span>
-      
-        <div class="bg-dark">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 
-          <div class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))">
-            <svg width="50" height="50" viewBox="0 0 100 100">
-              <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-              <path class="line line2" d="M 20,50 H 80" />
-              <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
-            </svg>
+</head>
+
+<body>
+
+  <!-- Navbar Section -->
+  <nav class="navbar navbar-sm navbar-dark bg-dark fixed-top mb-5 justify-centent-between">
+    <div class="container-fluid">
+
+      <a class="navbar-brand mx-2 text-warning" href="#">
+        Screen Mobile
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+
+        <!-- Menu Toggle -->
+        <span>
+
+          <div class="bg-dark">
+
+            <div class="menu"
+              onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))">
+              <svg width="50" height="50" viewBox="0 0 100 100">
+                <path class="line line1"
+                  d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                <path class="line line2" d="M 20,50 H 80" />
+                <path class="line line3"
+                  d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+              </svg>
+            </div>
+
           </div>
-      
-     </div>
-      
 
-      </span>
 
+        </span>
+
+      </button>
+      <div class="collapse navbar-collapse bg-secondary py-4" id="navbarSupportedContent">
+
+        <ul class="navbar-nav m-auto mb-3 mb-lg-0 text-left">
+          <li class="nav-item ">
+            <a class="nav-link text-warning active  aria-current=" page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-warning" href="#about">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-warning" href="#services">
+              Services
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-warning" href="#contact">
+              Contact
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- End of Navbar Section -->
+
+
+
+  <!-- ----------hero Section---------- -->
+
+  <!-- ----------Carousel---------- -->
+
+  <div id="carouselExampleCaptions" class="carousel carousel-fade mt-5" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/images/img1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/img2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/img3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
     </button>
-    <div class="collapse navbar-collapse bg-secondary py-4" id="navbarSupportedContent">
-      <ul class="navbar-nav m-auto mb-3 mb-lg-0 text-left">
-        <li class="nav-item ">
-          <a class="nav-link text-warning active  aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-warning" href="#">About</a>
-        </li>
-        
-        <li class="nav-item">
-          <a class="nav-link text-warning" href="#">Services</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link text-warning" href="#">Contact</a>
-        </li>
-        
-      </ul>
-    
-    </div>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
-</nav>
 
-<!-- End of Navbar Section -->
-
+  <!-- ----------End of Carousel---------- -->
 
 
-<!-- ----------hero Section---------- -->
 
-<!-- ----------Carousel---------- -->
+  <!-- ----------about page---------- -->
 
-<div id="carouselExampleCaptions" class="carousel carousel-fade mt-5" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  <div class="my-4 text-center p-2" id="about">
+    <h2 class="text-center display-4 mt-3">About Us</h2>
+    <div class="spanlit"></div>
+    <img src="assets/images/img3.jpg" alt="" class="img-fluid img-thumbnail w-100 mt-4">
+    <p class="text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis praesentium explicabo
+      dolorum nulla ab sequi modi. Vitae cum id sunt.</p>
+    <p class="text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis praesentium explicabo
+      dolorum nulla ab sequi modi. Vitae cum id sunt.</p>
+    <p class="text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis praesentium explicabo
+      dolorum nulla ab sequi modi. Vitae cum id sunt.</p>
+
   </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="assets/images/img1.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+
+  <!-- ----------End of about page---------- -->
+
+
+  <!-- slide drawer images -->
+
+  <div class="clean-scroll my-4 p-3">
+
+    <img src="assets/images/img1.jpg" alt="" class="img-fluid img-thumbnail" style="width: 300px; height: 200px">
+    <img src="assets/images/img2.jpg" alt="" class="img-fluid img-thumbnail" style="width: 300px; height: 200px">
+    <img src="assets/images/img3.jpg" alt="" class="img-fluid img-thumbnail" style="width: 300px; height: 200px">
+
+  </div>
+
+  <!-- End of slide drawer images -->
+
+
+
+  <!-- ----------Our Services---------- -->
+
+  <div class="my-4 text-center p-2" id="services">
+    <h2 class="text-center display-4 mt-3">Our Services</h2>
+    <div class="spanlit"></div>
+
+    <p class="text-center mt-3">We offer solemn display throughout the innovation and also build a path way to
+      communicate with individuals</p>
+
+  </div>
+
+
+  <section class="bg-warning py-5 text-center">
+
+    <div class="card-group">
+
+      <!-- First card -->
+
+      <div class="col-sm-6 col-md-6 col-6 mt-3">
+        <div class="card" style="width: 12rem;">
+          <img src="assets/images/img1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <small>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </small>
+            <a href="#" class="btn btn-outline-warning mt-3">Go somewhere</a>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="carousel-item">
-      <img src="assets/images/img2.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
+
+      <!-- Second card -->
+
+      <div class="col-sm-6 col-md-6 col-6 mt-3">
+        <div class="card" style="width: 12rem;">
+          <img src="assets/images/img1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <small>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </small>
+            <a href="#" class="btn btn-outline-warning mt-3">Go somewhere</a>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="carousel-item">
-      <img src="assets/images/img3.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
+
+      <!-- Third card -->
+
+      <div class="col-sm-6 col-md-6 col-6 mt-3">
+        <div class="card" style="width: 12rem;">
+          <img src="assets/images/img1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <small>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </small>
+            <a href="#" class="btn btn-outline-warning mt-3">Go somewhere</a>
+          </div>
+        </div>
       </div>
+
+
+      <!-- Forth card -->
+      <div class="col-sm-6 col-md-6 col-6 mt-3">
+        <div class="card" style="width: 12rem;">
+          <img src="assets/images/img1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <small>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </small>
+            <a href="#" class="btn btn-outline-warning mt-3">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
     </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+  </section>
 
-<!-- ----------End of Carousel---------- -->
+  <!--  ----------End of Our Services Section---------- -->
 
 
 
-<!-- ----------about page---------- -->
-
-<div class="my-4 text-center p-2">
-  <h2 class="text-center display-4 mt-3">About Us</h2>
-<div class="spanlit"></div>
-<img src="assets/images/img3.jpg" alt="" class="img-fluid img-thumbnail w-100 mt-4">
-<p class="text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis praesentium explicabo dolorum nulla ab sequi modi. Vitae cum id sunt.</p>
-<p class="text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis praesentium explicabo dolorum nulla ab sequi modi. Vitae cum id sunt.</p>
-<p class="text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis praesentium explicabo dolorum nulla ab sequi modi. Vitae cum id sunt.</p>
-
-</div>
-
-<!-- ----------End of about page---------- -->
+  <!-- Business Ads Content -->
 
 
+  <main class="container mt-5">
 
-<!-- slide drawer images -->
+    <video controls autoplay class="w-100 mb-3" poster="assets/images/img2.jpg">
+      <source src="#" type="video/mp4">
 
-<div class="clean-scroll my-4 p-3">
+    </video>
 
-<img src="assets/images/img1.jpg" alt="" class="img-fluid img-thumbnail" style="width: 300px; height: 200px">
-<img src="assets/images/img2.jpg" alt="" class="img-fluid img-thumbnail" style="width: 300px; height: 200px">
-<img src="assets/images/img3.jpg" alt="" class="img-fluid img-thumbnail" style="width: 300px; height: 200px">
-
-</div>
-
-<!-- End of slide drawer images -->
-
-
-
-<!-- ----------Our Services---------- -->
-
-<div class="my-4 text-center p-2">
-  <h2 class="text-center display-4 mt-3">Our Services</h2>
-<div class="spanlit"></div>
-
-<p class="text-center mt-3">We offer solemn display throughout the innovation and also build a path way to communicate with individuals</p>
-
-</div>
-
-
-<section class="bg-warning py-5 text-center">
-
-<div class="card-group">
-
-<!-- First card -->
-
-<div class="col-sm-6 col-md-6 col-6 mt-3">
-  <div class="card" style="width: 12rem;">
-  <img src="assets/images/img1.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-  <small>  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p></small>
-    <a href="#" class="btn btn-outline-warning mt-3">Go somewhere</a>
-  </div>
-</div>
-</div>
-
-<!-- Second card -->
-
-<div class="col-sm-6 col-md-6 col-6 mt-3">
-  <div class="card" style="width: 12rem;">
-  <img src="assets/images/img1.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <small><p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p></small>
-    <a href="#" class="btn btn-outline-warning mt-3">Go somewhere</a>
-  </div>
-</div>
-</div>
-
-<!-- Third card -->
-
-<div class="col-sm-6 col-md-6 col-6 mt-3">
-  <div class="card" style="width: 12rem;">
-  <img src="assets/images/img1.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <small><p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p></small>
-    <a href="#" class="btn btn-outline-warning mt-3">Go somewhere</a>
-  </div>
-</div>
-</div>
-
-
-<!-- Forth card -->
-<div class="col-sm-6 col-md-6 col-6 mt-3">
-  <div class="card" style="width: 12rem;">
-  <img src="assets/images/img1.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <small><p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p></small>
-    <a href="#" class="btn btn-outline-warning mt-3">Go somewhere</a>
-  </div>
-</div>
-</div>
-
-</div>
-</section>
-
-<!--  ----------End of Our Services Section---------- -->
-
-
-
-<!-- Business Ads Content -->
-
-
-<main class="container mt-5">
-
-  <video  controls autoplay class="w-100 mb-3" poster="assets/images/img2.jpg">
-<source src="#" type="video/mp4">
-
-  </video>
-
-  <div class="my-3 text-center p-2 shadow">
-  <h2 class="text-center display-4 mt-3">Business Event</h2>
-<div class="spanlit"></div>
-<p class="text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis praesentium explicabo dolorum nulla ab sequi modi. Vitae cum id sunt.</p>
-<button class="btn btn-warning mt-4 text-center mb-3">Visit Us</button>
-</div>
-
-<!-- Business Ads Content -->
-
-</main>
-
-<!-- ads section -->
-  <div class="my-5 p-2 align-items-center text-center container">
-<div>
-  <img src="./assets/images/ads/adds.gif" alt="" class="img-fluid img-thumbnail">
-</div>
-  </div>
-
-<!-- End of ads section -->
-
-
-
-<!-- Contact Section -->
-
-<div class="my-3 text-center p-2">
-  <h2 class="text-center display-4 mt-3">Contact Us</h2>
-<div class="spanlit"></div>
-
-
-<p class="text-center mt-3 px-3">Please fill the contact form below to enable us improve our services</p>
-</div>
-
-<div class="px-3">
-<form class="form-group container my-3 px-5 py-5 shadow bg-warning">
-
-<!-- Full Name -->
-
-  <div>
-    <div class="my-2">
-      <label for="fullname ">Full Name</label>
-    </div>
-    
-    <div class="my-2">
-    <input type="text" class="form-control" required>
-    </div>
+    <div class="my-3 text-center p-2 shadow">
+      <h2 class="text-center display-4 mt-3">Business Event</h2>
+      <div class="spanlit"></div>
+      <p class="text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis praesentium
+        explicabo dolorum nulla ab sequi modi. Vitae cum id sunt.</p>
+      <button class="btn btn-warning mt-4 text-center mb-3">Visit Us</button>
     </div>
 
-    <!-- Email -->
+    <!-- Business Ads Content -->
 
-  <div>
-    <div class="my-2">
-      <label for="fullname ">Email</label>
-    </div>
-    
-    <div class="my-2">
-    <input 
-    type="email" 
-    class="form-control" 
-    required
-    >
-    </div>
-    </div>
+  </main>
 
-    <!-- Phone Number -->
-
-  <div>
-    <div class="my-2">
-      <label 
-      for="fullname">
-      Phone Number
-    </label>
-    </div>
-    
-    <div class="my-2">
-    <input 
-    type="tel" 
-    class="form-control" 
-    pattern="[0-9]{3}" 
-    aria-label=""  
-    required  
-    size="11" 
-    maxlength="11" 
-    tabindex="1">
-    </div>
-    </div>
-
-    <!-- Message -->
-
+  <!-- ads section -->
+  <div class="my-3 p-2 align-items-center text-center container">
     <div>
-      <div class="my-2">
-        <label 
-        for="fullname">Message</label>
+      <img src="./assets/images/ads/adds.gif" alt="" class="img-fluid img-thumbnail">
+    </div>
+  </div>
+
+  <!-- End of ads section -->
+
+
+
+  <!-- Contact Section -->
+
+  <div class="my-3 text-center p-2" id="contact">
+    <h2 class="text-center display-4 mt-3">Contact Us</h2>
+    <div class="spanlit"></div>
+
+
+    <p class="text-center mt-3 px-3">Please fill the contact form below to enable us improve our services</p>
+  </div>
+
+  <div class="px-3">
+    <form class="form-group container my-3 px-5 py-5 shadow bg-warning">
+
+      <!-- Full Name -->
+
+      <div>
+        <div class="my-2">
+          <label for="fullname ">Full Name</label>
+        </div>
+
+        <div class="my-2">
+          <input type="text" class="form-control" required>
+        </div>
       </div>
-    <div>
-     <textarea 
-     name="message" 
-     id="" 
-     cols="30" 
-     rows="8"  
-     class="form-control">
+
+      <!-- Email -->
+
+      <div>
+        <div class="my-2">
+          <label for="fullname ">Email</label>
+        </div>
+
+        <div class="my-2">
+          <input type="email" class="form-control" required>
+        </div>
+      </div>
+
+      <!-- Phone Number -->
+
+      <div>
+        <div class="my-2">
+          <label for="fullname">
+            Phone Number
+          </label>
+        </div>
+
+        <div class="my-2">
+          <input type="tel" class="form-control" aria-label="tel no" required size="15" maxlength="11">
+        </div>
+      </div>
+
+
+      <!-- Message -->
+
+      <div>
+        <div class="my-2">
+          <label for="fullname">Message</label>
+        </div>
+        <div>
+          <textarea name="message" id="" cols="30" rows="8" class="form-control" required>
     </textarea>
+        </div>
       </div>
-    </div>
 
-    <input 
-    type="submit" 
-    class="btn btn-light my-3" 
-    value="Send">
- 
-
-</form>
-</div>
+      <input type="submit" class="btn btn-light my-3" value="Send">
 
 
-
-<!-- End of Contact Section -->
-
-
-<!-- ----------footer section---------- -->
-
-<div class="footer bg-dark p-3">
-
-  <form class="form-group">
-
-  <div class="input-group">
-    <input type="email" class="form-control" placeholder="Enter email address" required aria-label="Email Address" aria-describedby="button-addon2" tabindex="1">
-    <input type="submit" class="btn btn-outline-warning" type="button" id="button-addon2" value="Subscribe"></button>
+    </form>
   </div>
 
-</form>
-
-</div>
-
-<!-- ----------End of footer section---------- -->
 
 
+  <!-- End of Contact Section -->
+
+
+  <!-- ----------footer section---------- -->
+
+  <div class="footer bg-dark p-3 mt-3">
+
+    <form class="form-group mb-3 mt-3">
+
+      <div class="input-group">
+        <input type="email" class="form-control" placeholder="Enter email address" required aria-label="Email Address"
+          aria-describedby="button-addon2" tabindex="1">
+        <input type="submit" class="btn btn-outline-warning" type="button" id="button-addon2"
+          value="Subscribe"></button>
+      </div>
+
+    </form>
+
+    <!-- footer section inner -->
+
+<!-- Footer -->
+<footer class="page-footer font-small cyan darken-3">
+
+  <!-- Footer Elements -->
+  <div class="container d-flex justify-content-center align-items-center text-warning">
+
+    <!-- Grid row-->
+    <div class="">
+
+      <!-- Grid column -->
+      <div class="py-3 d-flex justify-content-center">
+        <div class="flex-center justify-content-between">
+
+          <!-- Facebook -->
+          <span class="px-3">
+            <i class="fab fa-facebook-f fa-lg text-warning"></i>
+          </span>
+          <!-- Twitter -->
+          <span class="px-3">
+            <i class="fab fa-twitter fa-lg text-warning"></i>
+          </span>
+          
+          <!--Instagram-->
+          <span class="px-3">
+            <i class="fab fa-instagram fa-lg text-warning"></i>
+          </span>
+         
+        </div>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center text-white py-3"> 
+    © 
+    <script>
+      let date = new Date();
+      let today = date.getFullYear();
+      document.write(today)
+      </script> 
+    
+    Copyright:
+    <a href="https://mobilescreen.netlify.app/" class="text-warning"> ScreenMobile</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+
+<!-- End of Footer Section inner -->
+
+
+  </div>
+
+  <!-- ----------End of footer section---------- -->
 
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-  </body>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+  </script>
+</body>
+
 </html>
