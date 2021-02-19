@@ -65,3 +65,7 @@ background-color: #f2f2ff;
   /* left: 3%; */
   /* transform: translate(-50%); */
 }
+
+textarea{
+  resize: none !important;
+}
