@@ -53,3 +53,15 @@ background-color: #f2f2ff;
 .nav-link:hover{
   color: #ffa000!important;
 }
+
+
+.spanlit{
+  width: 70px;
+  height: 6px;
+  background-color: yellow;
+  border-radius: 10px;
+  /* text-align: left !important;
+  align-items: start !important; */
+  /* left: 3%; */
+  /* transform: translate(-50%); */
+}
