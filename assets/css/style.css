@@ -70,12 +70,11 @@ textarea{
   resize: none !important;
 }
 
-
 .pushtop{
   right: 1%;
   bottom: 3%;
   transform: translate(-50%, -50%);
-  position: fixed;
+   position: fixed;
   outline: #000;
   cursor: pointer;
   display:none !important;
@@ -89,7 +88,6 @@ textarea{
   z-index: 11111;
 }
 
-
 .pushtop.active{
   display:block !important;
   transition: .3s ease-in-out;
@@ -97,7 +95,7 @@ textarea{
 
 
 @keyframes example {
-  0%   {color:red; }
+  0%   {color:red;}
   25%  {color:yellow; }
   50%  {color:blue; }
   75%  {color:purple; }
