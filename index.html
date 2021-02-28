@@ -11,6 +11,7 @@
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
   <link href="assets/css/hamburgers.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
@@ -139,14 +140,14 @@
 
   <div class="my-4 text-center p-2" id="about">
     <h2 class="text-center display-4 mt-5"></h2>
-    <h2 class="text-center display-4 mt-3">About Us</h2>
+    <h2 class="text-center display-4 mt-3" data-aos="fade-up" data-aos-duration="1000">About Us</h2>
     <div class="spanlit"></div>
-    <img src="assets/images/sld1.jpg" alt="" class="img-fluid img-thumbnail w-100 mt-4">
-    <p class="text-center mt-4 px-3">At first glance, technology and art seem as if they’re on opposite sides of the spectrum. Many art teachers might resist using technology in the art room for fear it will replace traditional artmaking methods. However, modes of learning are critical.</p>
+    <img src="assets/images/sld1.jpg" alt="" class="img-fluid img-thumbnail w-100 mt-4" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+    <p class="text-center mt-4 px-3" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">At first glance, technology and art seem as if they’re on opposite sides of the spectrum. Many art teachers might resist using technology in the art room for fear it will replace traditional artmaking methods. However, modes of learning are critical.</p>
 
-    <p class="text-center mt-3 px-3">There’s something magical about having the ability to move objects around on a digital creation to find the best composition, and it really speeds up the process.</p>
+    <p class="text-center mt-3 px-3" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">There’s something magical about having the ability to move objects around on a digital creation to find the best composition, and it really speeds up the process.</p>
 
-    <p class="text-center mt-3 px-3">Digitally creating a design for stencils will speed up the creation time by allowing students to easily replicate design elements. Students can turn their digital creations into stencils by cutting them themselves or using a tool like a Cricut.</p>
+    <p class="text-center mt-3 px-3" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">Digitally creating a design for stencils will speed up the creation time by allowing students to easily replicate design elements. Students can turn their digital creations into stencils by cutting them themselves or using a tool like a Cricut.</p>
 
   </div>
 
@@ -174,10 +175,10 @@
 
   <div class="mt-4 mb-2 text-center p-2" id="services">
     <h2 class="text-center display-4 mt-5"></h2>
-    <h2 class="text-center display-4 mt-3">Our Services</h2>
+    <h2 class="text-center display-4 mt-3" data-aos="fade-up" data-aos-duration="1000">Our Services</h2>
     <div class="spanlit"></div>
 
-    <p class="text-center mt-3 px-3">We offer solemn display throughout the innovation and also build a path way to
+    <p class="text-center mt-3 px-3" data-aos="fade-down" data-aos-duration="1000">We offer solemn display throughout the innovation and also build a path way to
       communicate with individuals</p>
 
   </div>
@@ -262,9 +263,9 @@
      <iframe class="w-100" height="315" src="https://www.youtube.com/embed/5RluSnRPRbI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     <div class="my-3 text-center p-2 shadow">
-      <h2 class="text-center display-4 mt-3">Business Event</h2>
+      <h2 class="text-center display-4 mt-3" data-aos="fade-up" data-aos-duration="1000">Business Event</h2>
       <div class="spanlit"></div>
-      <p class="text-center mt-3 px-3">Business events define significant happenings that different parts of the business must register and act upon by using different applications. Oracle Integration Server integrates all applications that register and act upon a business event.</p>
+      <p class="text-center mt-3 px-3" data-aos="fade-down" data-aos-duration="1000">Business events define significant happenings that different parts of the business must register and act upon by using different applications. Oracle Integration Server integrates all applications that register and act upon a business event.</p>
       <button class="btn btn-warning mt-4 text-center mb-3">Visit Us</button>
     </div>
 
@@ -287,11 +288,11 @@
 
   <div class="my-3 text-center p-2" id="contact">
     <h2 class="text-center display-4 mt-5"></h2>
-    <h2 class="text-center display-4 mt-5">Contact Us</h2>
+    <h2 class="text-center display-4 mt-5" data-aos="fade-up" data-aos-duration="1000">Contact Us</h2>
     <div class="spanlit"></div>
 
 
-    <p class="text-center mt-3 px-3">Please fill the contact form below to enable us improve our services</p>
+    <p class="text-center mt-3 px-3" data-aos="fade-down" data-aos-duration="1000">Please fill the contact form below to enable us improve our services</p>
   </div>
 
   <div class="px-3">
@@ -453,6 +454,17 @@
   </script>
 
 <script src="./assets/js/main.js"></script>
+
+<!-- Animation -->
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({
+            duration: 3000,
+            once: true,
+          });
+        </script>
+
 
 
 </body>
